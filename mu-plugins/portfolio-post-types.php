@@ -13,7 +13,9 @@ function projects()
       'edit_item' => 'Edit Project',
       'singular_name' => 'Project'
     ),
-    'menu_icon' => 'dashicons-portfolio'
+    'menu_icon' => 'dashicons-portfolio',
+    'show_in_rest' => true,
+    'supports'     => array('title', 'editor', 'thumbnail'),
 
   ));
 }
