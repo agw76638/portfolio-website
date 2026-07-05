@@ -842,7 +842,7 @@ template {
 }
 @media only screen and (min-width: 482px) {
   .site-header {
-    padding-bottom: calc(0.75 * var(--global--spacing-vertical));
+    padding-bottom: calc(2.4 * var(--global--spacing-vertical));
   }
 }
 
