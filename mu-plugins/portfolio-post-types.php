@@ -15,8 +15,15 @@ function projects()
     ),
     'menu_icon' => 'dashicons-portfolio',
     'show_in_rest' => true,
-    'supports'     => array('title', 'editor', 'thumbnail'),
+    'supports'     => array('title', 'editor', 'thumbnail', 'custom-fields'),
 
+  ));
+
+  register_post_meta('project', 'link', array(
+    'show_in_rest' => true, // Tells Gutenberg to make this field accessible via the REST API
+    'single'        => true, // Saves the field as a single string, not an array
+    'type'          => 'string',
+    'sanitize_callback' => 'esc_url_raw', // Automatically sanitizes the input as a safe URL
   ));
 }
 
