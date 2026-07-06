@@ -25,6 +25,13 @@ function projects()
     'type'          => 'string',
     'sanitize_callback' => 'esc_url_raw', // Automatically sanitizes the input as a safe URL
   ));
+
+  register_post_meta('project', 'case_study_button_text', array(
+    'show_in_rest' => true,
+    'single'        => true,
+    'type'          => 'string',
+    'sanitize_callback' => 'sanitize_text_field', // Sanitizes safe text entry
+  ));
 }
 
 add_action('init', 'projects');
