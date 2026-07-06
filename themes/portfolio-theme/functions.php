@@ -6,6 +6,8 @@ function portfolio_theme_enqueue_styles()
 {
   wp_enqueue_style(
     'portfolio-theme-style',
-    get_stylesheet_uri('style.css')
+    get_stylesheet_uri('style.css'),
+    array(),
+    time()
   );
 }
