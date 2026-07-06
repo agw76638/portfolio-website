@@ -26,7 +26,7 @@ function projects()
     'sanitize_callback' => 'esc_url_raw', // Automatically sanitizes the input as a safe URL
   ));
 
-  register_post_meta('project', 'case_study_button_text', array(
+  register_post_meta('project', 'link_text', array(
     'show_in_rest' => true,
     'single'        => true,
     'type'          => 'string',
