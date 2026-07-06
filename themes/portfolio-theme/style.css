@@ -4,13 +4,14 @@
  Description: Modification of Twenty Twenty-One theme
 */
 
-.site-header {
+header.site-header {
+  align-items: center;
   padding-top: calc(0.75 * var(--global--spacing-vertical));
   padding-bottom: calc(0.75 * var(--global--spacing-vertical));
 }
 
 @media only screen and (min-width: 822px) {
-  .site-header {
+  header.site-header {
     padding-top: calc(2.4 * var(--global--spacing-vertical));
     padding-bottom: calc(2.4 * var(--global--spacing-vertical));
   }
