@@ -5,9 +5,22 @@
 */
 
 header.site-header {
+  justify-content: space-between;
   align-items: center;
   padding-top: calc(0.75 * var(--global--spacing-vertical));
   padding-bottom: calc(0.75 * var(--global--spacing-vertical));
+}
+
+nav.primary-navigation {
+  position: static;
+
+  .menu-button-container {
+    position: static;
+
+    #primary-mobile-menu .dropdown-icon.open .svg-icon {
+      position: static;
+    }
+  }
 }
 
 @media only screen and (min-width: 822px) {
