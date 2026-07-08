@@ -11,6 +11,11 @@ header.site-header {
   padding-bottom: calc(0.75 * var(--global--spacing-vertical));
 }
 
+header.site-header::after,
+header.site-header::before {
+  content: none;
+}
+
 nav.primary-navigation {
   position: static;
 
