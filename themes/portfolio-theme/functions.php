@@ -9,6 +9,6 @@ function portfolio_theme_enqueue_styles()
     'portfolio-theme-style',
     get_stylesheet_uri('style.css'),
     array(),
-    filemtime('./style.css')
+    filemtime(get_stylesheet_directory() . '/style.css')
   );
 }
